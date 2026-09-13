@@ -11,26 +11,38 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<ol>
+  <li>
+    <b>SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond</b><br/>
+    <b>Junteng Liu</b>, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He<br/>
+    Arxiv, 2025<br/>
+    First author. Code available on GitHub.
+  </li>
+  <li>
+    <b>On the Perception Bottleneck of VLMs for Chart Understanding</b><br/>
+    <b>Junteng Liu</b>, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He<br/>
+    Arxiv, 2025<br/>
+    First author. Code: Vision4Chart on GitHub.
+  </li>
+  <li>
+    <b>On the Universal Truthfulness Hyperplane Inside LLMs</b><br/>
+    <b>Junteng Liu</b>, Shiqi Chen, Yu Cheng, Junxian He<br/>
+    EMNLP 2024<br/>
+    First author. Code: Universal_Truthfulness_Hyperplane on GitHub.
+  </li>
+  <li>
+    <b>In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation</b><br/>
+    Shiqi Chen, Miao Xiong, <b>Junteng Liu</b>, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He<br/>
+    ICML 2024
+  </li>
+  <li>
+    <b>C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models</b><br/>
+    Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, <b>Junteng Liu</b>, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He<br/>
+    NeurIPS 2023
+  </li>
+  <li>
+    <b>Composing Parameter-Efficient Modules with Arithmetic Operations</b><br/>
+    Jinghan Zhang, Shiqi Chen, <b>Junteng Liu</b>, Junxian He<br/>
+    NeurIPS 2023
+  </li>
+</ol>
